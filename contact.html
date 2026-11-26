@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — 4Achievers</title>
+  <meta name="description" content="Get in touch with 4Achievers for free career counselling, course enquiries & admissions. Call +91-93117-65521, WhatsApp us, or visit our Noida & Mumbai centres." />
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* page-specific tweaks for contact.html */
+    .contact-info { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+    .contact-info li { display: flex; gap: 14px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .contact-info li:last-child { border-bottom: none; }
+    .contact-info .ci-ico { flex: none; width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--brand-light); font-size: 1.3rem; }
+    .contact-info .ci-label { font-family: var(--head); font-weight: 600; color: var(--ink); font-size: .86rem; margin-bottom: 2px; }
+    .contact-info .ci-value { color: var(--body); font-size: .94rem; }
+    .contact-info .ci-value a { color: var(--brand); font-weight: 500; }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+      </div>
+      <h1>Get in Touch</h1>
+      <p>Have a question about a course, fees, batch timings or placements? Talk to our career team — we reply fast and there's zero pressure. Book a free counselling session or just say hello.</p>
+    </div>
+  </section>
+
+  <!-- ===================== ENQUIRY FORM + INFO ===================== -->
+  <section class="section">
+    <div class="container grid grid--2" style="align-items:start;gap:44px">
+
+      <!-- LEFT: Enquiry form -->
+      <div class="form-card form-card--accent" data-reveal>
+        <span class="eyebrow">Free Counselling / Enquiry</span>
+        <h2 style="margin-bottom:6px">Book Free Counselling</h2>
+        <p style="font-size:.95rem">Fill in your details and a career advisor will call you back — usually within a few working hours.</p>
+        <form onsubmit="return window.FA.fakeSubmit(event,'Thanks! Your enquiry is in — a career advisor will call you shortly.')">
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="c-name">Full Name</label>
+              <input class="form__control" id="c-name" type="text" placeholder="Your name" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="c-phone">Phone</label>
+              <input class="form__control" id="c-phone" type="tel" placeholder="Mobile number" required>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="c-email">Email</label>
+            <input class="form__control" id="c-email" type="email" placeholder="you@email.com" required>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="c-course">Course of Interest</label>
+              <select class="form__control" id="c-course" required>
+                <option value="">Select a course</option>
+                <option>Data Science Master Program</option>
+                <option>Data Analytics</option>
+                <option>Python Full Stack</option>
+                <option>Java Full Stack</option>
+                <option>Software Testing</option>
+                <option>AWS Cloud Architect</option>
+                <option>UI/UX Design</option>
+                <option>Cyber Security</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="c-city">City</label>
+              <select class="form__control" id="c-city" required>
+                <option value="">Select your city</option>
+                <option>Noida</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Bangalore</option>
+                <option>Gurugram</option>
+                <option>Pune</option>
+                <option>Hyderabad</option>
+                <option>Online (Anywhere)</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="c-msg">Message</label>
+            <textarea class="form__control" id="c-msg" rows="4" placeholder="Tell us what you're looking for — fees, batch timings, demo class, placements…"></textarea>
+          </div>
+          <button class="btn btn--primary btn--block btn--lg" type="submit">Send Enquiry</button>
+          <p class="form__hint">🔒 Your details are safe with us. No spam, ever.</p>
+        </form>
+      </div>
+
+      <!-- RIGHT: Contact info panel -->
+      <div data-reveal>
+        <span class="eyebrow">Reach Us Directly</span>
+        <h2 style="margin-bottom:6px">Contact Information</h2>
+        <p class="lead">Prefer to talk now? Call, WhatsApp or email us — our team is happy to help with admissions, demo classes and course guidance.</p>
+
+        <div class="form-card" style="padding:12px 24px;margin-top:20px">
+          <ul class="contact-info">
+            <li>
+              <span class="ci-ico">📞</span>
+              <div>
+                <div class="ci-label">Call Us — Noida (Head Office)</div>
+                <div class="ci-value"><a href="tel:+919311765521">+91-93117-65521</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="ci-ico">📞</span>
+              <div>
+                <div class="ci-label">Call Us — Mumbai Centre</div>
+                <div class="ci-value"><a href="tel:+918010805667">+91-80108-05667</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="ci-ico">✉️</span>
+              <div>
+                <div class="ci-label">Email Us</div>
+                <div class="ci-value"><a href="mailto:info@4achievers.co.in">info@4achievers.co.in</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="ci-ico">💬</span>
+              <div>
+                <div class="ci-label">WhatsApp</div>
+                <div class="ci-value"><a href="https://wa.me/919311765521" target="_blank" rel="noopener">Chat with an advisor →</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="ci-ico">🕘</span>
+              <div>
+                <div class="ci-label">Working Hours</div>
+                <div class="ci-value">Monday – Saturday · 9:30 AM – 7:00 PM<br><span style="color:var(--muted);font-size:.86rem">Sunday: Closed (calls still welcome)</span></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick-action buttons -->
+        <div class="flex gap-2 wrap mt-3">
+          <a class="btn btn--primary" href="tel:+919311765521">📞 Call Now</a>
+          <a class="btn btn--accent" href="https://wa.me/919311765521" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+          <a class="btn btn--secondary" href="mailto:info@4achievers.co.in">✉️ Email Us</a>
+        </div>
+
+        <!-- Trust stats -->
+        <div class="stats mt-4" style="grid-template-columns:repeat(3,1fr)">
+          <div class="stat"><div class="stat__num" data-count="2" data-suffix=" hrs">0</div><div class="stat__label">Avg. Callback Time</div></div>
+          <div class="stat"><div class="stat__num" data-count="15" data-suffix="+">0</div><div class="stat__label">Centres in India</div></div>
+          <div class="stat"><div class="stat__num" data-count="48500" data-suffix="+">0</div><div class="stat__label">Learners Guided</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MAP PLACEHOLDER ===================== -->
+  <section class="section section--alt section--tight">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Visit Us</span>
+        <h2>Find Our Head Office</h2>
+        <p>Walk-ins welcome during working hours. Our Noida head office is a short walk from the metro — easy to reach from across the NCR.</p>
+      </div>
+      <div class="hero__card" data-reveal style="aspect-ratio:21/9;padding:0">
+        <div class="media-ph" style="background:linear-gradient(135deg,#12357f,#2456d6)">
+          <div style="text-align:center;padding:24px">
+            <div style="font-size:3rem">📍</div>
+            <div style="font-family:var(--head);font-weight:700;font-size:1.3rem;margin-top:8px">Head Office — Sector 16, Noida</div>
+            <div style="opacity:.85;margin-top:6px">A-27D, Sector 16 Metro Station, Noida, Uttar Pradesh 201301</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAMPUS QUICK CARDS ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Our Centres</span>
+        <h2>Drop By a Centre Near You</h2>
+        <p>Modern classrooms &amp; labs, experienced trainers and flexible weekday + weekend batches across India.</p>
+      </div>
+      <div class="grid grid--4">
+        <article class="campus-card" data-reveal>
+          <div class="campus-card__media" style="background:linear-gradient(135deg,#1b4dc1,#2456d6)"><span style="font-size:2.4rem">🏢</span><span class="badge badge--dark campus-card__badge">HQ</span></div>
+          <div class="campus-card__body">
+            <h3 class="card__title">Noida (Head Office)</h3>
+            <p class="campus-card__addr">A-27D, Sector 16 Metro, Noida, UP</p>
+            <div class="card__meta">🕘 9:30 AM – 7 PM · 📞 +91-93117-65521</div>
+            <div class="campus-card__row"><a class="btn btn--secondary btn--sm" href="campuses.html">View Centre</a></div>
+          </div>
+        </article>
+        <article class="campus-card" data-reveal>
+          <div class="campus-card__media" style="background:linear-gradient(135deg,#0ea5e9,#16a34a)"><span style="font-size:2.4rem">🏢</span></div>
+          <div class="campus-card__body">
+            <h3 class="card__title">Mumbai (Thane West)</h3>
+            <p class="campus-card__addr">Wagle Estate, Thane West, Maharashtra</p>
+            <div class="card__meta">🕘 9:30 AM – 7 PM · 📞 +91-80108-05667</div>
+            <div class="campus-card__row"><a class="btn btn--secondary btn--sm" href="campuses.html">View Centre</a></div>
+          </div>
+        </article>
+        <article class="campus-card" data-reveal>
+          <div class="campus-card__media" style="background:linear-gradient(135deg,#7c3aed,#2456d6)"><span style="font-size:2.4rem">🏢</span></div>
+          <div class="campus-card__body">
+            <h3 class="card__title">Delhi (Saket &amp; Laxmi Nagar)</h3>
+            <p class="campus-card__addr">Near Metro, Saket &amp; Laxmi Nagar, New Delhi</p>
+            <div class="card__meta">🕘 9:30 AM – 7 PM · 📞 +91-93117-65521</div>
+            <div class="campus-card__row"><a class="btn btn--secondary btn--sm" href="campuses.html">View Centre</a></div>
+          </div>
+        </article>
+        <article class="campus-card" data-reveal>
+          <div class="campus-card__media" style="background:linear-gradient(135deg,#f59e0b,#dc2626)"><span style="font-size:2.4rem">🏢</span></div>
+          <div class="campus-card__body">
+            <h3 class="card__title">Bangalore (BTM Layout)</h3>
+            <p class="campus-card__addr">BTM Layout, Bengaluru, Karnataka</p>
+            <div class="card__meta">🕘 9:30 AM – 7 PM · 📞 +91-93117-65521</div>
+            <div class="campus-card__row"><a class="btn btn--secondary btn--sm" href="campuses.html">View Centre</a></div>
+          </div>
+        </article>
+      </div>
+      <div class="text-center mt-4"><a class="btn btn--primary" href="campuses.html">View All 15 Centres →</a></div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions Before You Reach Out?</h2>
+        <p>Quick answers to the things people ask us most. Still unsure? Just drop us a message above.</p>
+      </div>
+      <div class="accordion" data-single>
+        <div class="accordion__item is-open">
+          <button class="accordion__btn">How soon will I get a callback after enquiring?<span class="ico">+</span></button>
+          <div class="accordion__panel" style="max-height:200px"><p>During working hours (Mon–Sat, 9:30 AM–7 PM) our team typically calls back within 2 hours. Enquiries received after hours or on Sunday are answered first thing the next working day.</p></div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__btn">Can I attend a free demo class before enrolling?<span class="ico">+</span></button>
+          <div class="accordion__panel"><p>Yes. We offer a free demo class for every program so you can experience the teaching style, meet a mentor and see the curriculum before you decide. Mention "demo class" in your message and we'll arrange it.</p></div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__btn">Do you offer online as well as classroom batches?<span class="ico">+</span></button>
+          <div class="accordion__panel"><p>Both. You can learn at any of our 15+ centres across India or join live online batches from anywhere, with the same mentors, projects and placement support either way.</p></div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__btn">What's the best way to discuss fees and EMI options?<span class="ico">+</span></button>
+          <div class="accordion__panel"><p>Fees vary by program and we run regular scholarships plus no-cost EMI options. The fastest way is to call <a href="tel:+919311765521">+91-93117-65521</a> or message us on <a href="https://wa.me/919311765521" target="_blank" rel="noopener">WhatsApp</a>, and an advisor will walk you through the plans that fit your budget.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band" data-reveal>
+        <h2>Let's Plan Your Tech Career Together</h2>
+        <p>Book a free 1-on-1 counselling session and get a personalised roadmap, honest salary expectations and the fastest route into your dream role.</p>
+        <div class="cta-actions">
+          <a class="btn btn--light btn--lg" href="tel:+919311765521">📞 Call +91-93117-65521</a>
+          <a class="btn btn--accent btn--lg" href="https://wa.me/919311765521" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

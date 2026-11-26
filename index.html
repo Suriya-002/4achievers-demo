@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4Achievers — Build Job-Ready Tech Skills With Industry-Focused Training</title>
+  <meta name="description" content="4Achievers offers industry-focused IT training in Data Science, Software Testing, Full Stack Development & Cloud with 100% placement support across 15+ cities in India." />
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content" data-reveal>
+        <span class="eyebrow">#1 IT Training & Placement Institute</span>
+        <h1 class="hero__title">Build <span>Job-Ready Tech Skills</span> With Industry-Focused Training</h1>
+        <p class="hero__text">Hands-on, mentor-led programs in Data &amp; AI, Software Testing, Full Stack Development and Cloud — designed to make you placement-ready in months, not years.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="contact.html">Book Free Counselling</a>
+          <a class="btn btn--secondary btn--lg" href="courses.html">Explore Courses</a>
+        </div>
+        <div class="hero__trust">
+          <span>✅ Live + Recorded Classes</span>
+          <span>✅ 100% Placement Support</span>
+          <span>✅ Industry Expert Mentors</span>
+        </div>
+      </div>
+
+      <div class="hero__media" data-reveal>
+        <div class="hero__card">
+          <div class="media-ph" style="background:linear-gradient(135deg,#1b4dc1,#2456d6)">
+            <div style="text-align:center;padding:24px">
+              <div style="font-size:3.2rem">🎓</div>
+              <div style="font-family:var(--head);font-weight:700;font-size:1.3rem;margin-top:8px">Your Tech Career Starts Here</div>
+              <div style="opacity:.85;margin-top:6px">Learn · Build · Get Placed</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__float hero__float--tl">⭐ 4.9/5 &nbsp;<span style="color:var(--muted);font-weight:500">15,000+ reviews</span></div>
+        <div class="hero__float hero__float--br">💼 5,000+ &nbsp;<span style="color:var(--muted);font-weight:500">Learners Placed</span></div>
+      </div>
+    </div>
+
+    <!-- hero stats -->
+    <div class="container" style="padding-bottom:48px">
+      <div class="stats stats--band">
+        <div class="stat"><div class="stat__num" data-count="48500" data-suffix="+">0</div><div class="stat__label">Successful Learners</div></div>
+        <div class="stat"><div class="stat__num" data-count="500" data-suffix="+">0</div><div class="stat__label">Hiring Partners</div></div>
+        <div class="stat"><div class="stat__num" data-count="15" data-suffix="+">0</div><div class="stat__label">Cities Across India</div></div>
+        <div class="stat"><div class="stat__num" data-count="10" data-suffix="+">0</div><div class="stat__label">Years of Excellence</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COUNSELLING FORM ===================== -->
+  <section class="section section--alt">
+    <div class="container grid grid--2" style="align-items:center;gap:48px">
+      <div data-reveal>
+        <span class="eyebrow">Free Career Counselling</span>
+        <h2>Not sure which course is right for you?</h2>
+        <p class="lead">Talk to a career advisor for a free, no-pressure session. We'll map your background to the fastest route into a tech career — with a clear roadmap, timeline and salary expectations.</p>
+        <ul class="list-check mt-2">
+          <li>Personalised course & career roadmap</li>
+          <li>Skill-gap analysis and learning plan</li>
+          <li>Salary benchmarks & placement outlook</li>
+          <li>Scholarship & EMI options explained</li>
+        </ul>
+      </div>
+      <div class="form-card form-card--accent" data-reveal>
+        <h3 style="margin-bottom:16px">Book Your Free Session</h3>
+        <form onsubmit="return window.FA.fakeSubmit(event,'Thanks! A career advisor will call you shortly.')">
+          <div class="form__row">
+            <div class="form__group"><label class="form__label">Full Name</label><input class="form__control" type="text" placeholder="Your name" required></div>
+            <div class="form__group"><label class="form__label">Phone</label><input class="form__control" type="tel" placeholder="Mobile number" required></div>
+          </div>
+          <div class="form__group"><label class="form__label">Email</label><input class="form__control" type="email" placeholder="you@email.com" required></div>
+          <div class="form__row">
+            <div class="form__group"><label class="form__label">Qualification</label>
+              <select class="form__control" required>
+                <option value="">Select</option><option>Working Professional</option><option>B.Tech / B.E.</option><option>Final Year Student</option><option>Graduate</option><option>Diploma</option><option>Other</option>
+              </select>
+            </div>
+            <div class="form__group"><label class="form__label">City</label>
+              <select class="form__control" required>
+                <option value="">Select</option><option>Noida</option><option>Mumbai</option><option>Delhi</option><option>Bangalore</option><option>Gurugram</option><option>Pune</option><option>Hyderabad</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__group"><label class="form__label">Course of Interest</label>
+            <select class="form__control" required>
+              <option value="">Select a course</option><option>Data Science Master Program</option><option>Data Analytics</option><option>Python Full Stack</option><option>Java Full Stack</option><option>Software Testing</option><option>AWS Cloud Architect</option><option>UI/UX Design</option><option>Cyber Security</option>
+            </select>
+          </div>
+          <button class="btn btn--primary btn--block btn--lg" type="submit">Book Free Counselling</button>
+          <p class="form__hint">🔒 Your details are safe with us. No spam, ever.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PLACEMENT PARTNERS ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Placements</span>
+        <h2>Our Alumni Work Across 500+ Global Tech Leaders</h2>
+        <p>From service giants to product companies and fast-growing startups — our learners get hired where it matters.</p>
+      </div>
+      <div class="logos" data-reveal>
+        <span class="logo-chip">TCS</span><span class="logo-chip">Accenture</span><span class="logo-chip">Wipro</span>
+        <span class="logo-chip">Capgemini</span><span class="logo-chip">Cognizant</span><span class="logo-chip">HCLTech</span>
+        <span class="logo-chip">Infosys</span><span class="logo-chip">Amazon</span><span class="logo-chip">Microsoft</span>
+        <span class="logo-chip">IBM</span><span class="logo-chip">PayPal</span><span class="logo-chip">Tata Elxsi</span>
+        <span class="logo-chip">L&amp;T</span><span class="logo-chip">Persistent</span><span class="logo-chip">Siemens</span>
+        <span class="logo-chip">Bosch</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Global Exam Alignment</span>
+        <h2>Industry-Recognized Certifications for a Bigger Tomorrow</h2>
+        <p>Our curriculum is mapped to the certifications employers look for — so you learn and certify at the same time.</p>
+      </div>
+      <div class="logos" data-reveal>
+        <span class="logo-chip">AWS Certified</span><span class="logo-chip">Microsoft Azure</span><span class="logo-chip">Google Cloud</span>
+        <span class="logo-chip">IBM Data</span><span class="logo-chip">Oracle Cloud</span><span class="logo-chip">Meta React</span>
+        <span class="logo-chip">Adobe CC</span><span class="logo-chip">CompTIA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COURSE CATALOG (TABS) ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">IT Career Programs</span>
+        <h2>Choose a Program Built for the Job You Want</h2>
+        <p>Every program is project-driven, mentor-led, and backed by dedicated placement support.</p>
+      </div>
+
+      <div data-tabs="cat">
+        <div class="tabs__nav">
+          <button class="tab-btn is-active" data-tab-btn="cat" data-key="all" onclick="FA.switchTab(this,'cat')">All Programs</button>
+          <button class="tab-btn" data-tab-btn="cat" data-key="data" onclick="FA.switchTab(this,'cat')">Data &amp; Analytics</button>
+          <button class="tab-btn" data-tab-btn="cat" data-key="dev" onclick="FA.switchTab(this,'cat')">Development</button>
+          <button class="tab-btn" data-tab-btn="cat" data-key="cloud" onclick="FA.switchTab(this,'cat')">Cloud &amp; DevOps</button>
+          <button class="tab-btn" data-tab-btn="cat" data-key="qa" onclick="FA.switchTab(this,'cat')">Testing &amp; QA</button>
+          <button class="tab-btn" data-tab-btn="cat" data-key="design" onclick="FA.switchTab(this,'cat')">Design</button>
+        </div>
+
+        <!-- ALL -->
+        <div class="tabs__panel is-active" data-tab-panel="cat" data-key="all">
+          <div class="grid grid--3">
+            <!-- Data Science -->
+            <article class="card course-card">
+              <div class="card__media" style="background:linear-gradient(135deg,#1b4dc1,#5b8def)"><span style="font-size:2.6rem">📊</span><span class="badge badge--popular" style="position:absolute;top:12px;right:12px">Most Popular</span></div>
+              <div class="card__body">
+                <h3 class="card__title">Data Science Master Program</h3>
+                <div class="card__meta">⏱ 6 Months · 🎥 Live + Recorded · 💼 Placement Support</div>
+                <p class="card__text">Python, Statistics, Machine Learning, Deep Learning &amp; GenAI with real datasets.</p>
+                <div class="card__footer"><span class="course-card__price">₹65,000 <span class="course-card__old">₹95,000</span></span><a class="btn btn--secondary btn--sm" href="course-data-science.html">View Course</a></div>
+              </div>
+            </article>
+            <!-- Data Analytics -->
+            <article class="card course-card">
+              <div class="card__media" style="background:linear-gradient(135deg,#0ea5e9,#2456d6)"><span style="font-size:2.6rem">📈</span></div>
+              <div class="card__body">
+                <h3 class="card__title">Data Analytics Course</h3>
+                <div class="card__meta">⏱ 4 Months · 🎥 Live + Recorded · 📜 Certification</div>
+                <p class="card__text">Excel, SQL, Power BI &amp; Python analytics with portfolio-ready dashboards.</p>
+                <div class="card__footer"><span class="course-card__price">₹45,000 <span class="course-card__old">₹70,000</span></span><a class="btn btn--secondary btn--sm" href="course-data-analytics.html">View Course</a></div>
+              </div>
+            </article>
+            <!-- Software Testing -->
+            <article class="card course-card">
+              <div class="card__media" style="background:linear-gradient(135deg,#16a34a,#0ea5e9)"><span style="font-size:2.6rem">🧪</span><span class="badge badge--job" style="position:absolute;top:12px;right:12px">Job Ready</span></div>
+              <div class="card__body">
+                <h3 class="card__title">Software Testing Course</h3>
+                <div class="card__meta">⏱ 3 Months · 🎥 Live + Recorded · 💼 Placement Support</div>
+                <p class="card__text">Manual + Automation testing with Selenium, API testing &amp; real projects.</p>
+                <div class="card__footer"><span class="course-card__price">₹35,000 <span class="course-card__old">₹55,000</span></span><a class="btn btn--secondary btn--sm" href="course-software-testing.html">View Course</a></div>
+              </div>
+            </article>
+            <!-- Python Full Stack -->
+            <article class="card course-card">
+              <div class="card__media" style="background:linear-gradient(135deg,#f59e0b,#f97316)"><span style="font-size:2.6rem">🐍</span><span class="badge badge--popular" style="position:absolute;top:12px;right:12px">Most Popular</span></div>
+              <div class="card__body">
+                <h3 class="card__title">Python Full Stack Developer</h3>
+                <div class="card__meta">⏱ 6 Months · 🎥 Live + Recorded · 💼 Placement Support</div>
+                <p class="card__text">Django, REST APIs, React, databases &amp; deployment — build &amp; ship real apps.</p>
+                <div class="card__footer"><span class="course-card__price">₹60,000 <span class="course-card__old">₹90,000</span></span><a class="btn btn--secondary btn--sm" href="course-python-full-stack.html">View Course</a></div>
+              </div>
+            </article>
+            <!-- Java Full Stack -->
+            <article class="card course-card">
+              <div class="card__media" style="background:linear-gradient(135deg,#dc2626,#f59e0b)"><span style="font-size:2.6rem">☕</span><span class="badge badge--job" style="position:absolute;top:12px;right:12px">Job Ready</span></div>
+              <div class="card__body">
+                <h3 class="card__title">Java Full Stack Developer</h3>
+                <div class="card__meta">⏱ 6 Months · 🎥 Live + Recorded · 💼 Placement Support</div>
+                <p class="card__text">Core Java, Spring Boot, Microservices, React &amp; cloud deployment.</p>
+                <div class="card__footer"><span class="course-card__price">₹60,000 <span class="course-card__old">₹90,000</span></span><a class="btn btn--secondary btn--sm" href="course-java-full-stack.html">View Course</a></div>
+              </div>
+            </article>
+            <!-- AWS -->
+            <article class="card course-card">
+              <div class="card__media" style="background:linear-gradient(135deg,#7c3aed,#2456d6)"><span style="font-size:2.6rem">☁️</span><span class="badge badge--demand" style="position:absolute;top:12px;right:12px">In Demand</span></div>
+              <div class="card__body">
+                <h3 class="card__title">AWS Cloud Solutions Architect</h3>
+                <div class="card__meta">⏱ 5 Months · 🎥 Live + Recorded · 📜 Certification</div>
+                <p class="card__text">EC2, S3, VPC, IAM, Docker, Kubernetes &amp; Terraform with hands-on labs.</p>
+                <div class="card__footer"><span class="course-card__price">₹55,000 <span class="course-card__old">₹80,000</span></span><a class="btn btn--secondary btn--sm" href="course-aws-cloud.html">View Course</a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- DATA -->
+        <div class="tabs__panel" data-tab-panel="cat" data-key="data">
+          <div class="grid grid--3">
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#1b4dc1,#5b8def)"><span style="font-size:2.6rem">📊</span></div><div class="card__body"><h3 class="card__title">Data Science Master Program</h3><div class="card__meta">⏱ 6 Months · 💼 Placement Support</div><p class="card__text">Python, ML, Deep Learning &amp; GenAI.</p><div class="card__footer"><span class="course-card__price">₹65,000</span><a class="btn btn--secondary btn--sm" href="course-data-science.html">View Course</a></div></div></article>
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#0ea5e9,#2456d6)"><span style="font-size:2.6rem">📈</span></div><div class="card__body"><h3 class="card__title">Data Analytics Course</h3><div class="card__meta">⏱ 4 Months · 📜 Certification</div><p class="card__text">SQL, Power BI &amp; Python analytics.</p><div class="card__footer"><span class="course-card__price">₹45,000</span><a class="btn btn--secondary btn--sm" href="course-data-analytics.html">View Course</a></div></div></article>
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#16a34a,#0ea5e9)"><span style="font-size:2.6rem">📉</span></div><div class="card__body"><h3 class="card__title">Business Analytics</h3><div class="card__meta">⏱ 4 Months · 📜 Certification</div><p class="card__text">Analytics for decision-making &amp; strategy.</p><div class="card__footer"><span class="course-card__price">₹48,000</span><a class="btn btn--secondary btn--sm" href="courses.html">View Course</a></div></div></article>
+          </div>
+        </div>
+
+        <!-- DEV -->
+        <div class="tabs__panel" data-tab-panel="cat" data-key="dev">
+          <div class="grid grid--3">
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#f59e0b,#f97316)"><span style="font-size:2.6rem">🐍</span></div><div class="card__body"><h3 class="card__title">Python Full Stack</h3><div class="card__meta">⏱ 6 Months · 💼 Placement Support</div><p class="card__text">Django, React, APIs &amp; deployment.</p><div class="card__footer"><span class="course-card__price">₹60,000</span><a class="btn btn--secondary btn--sm" href="course-python-full-stack.html">View Course</a></div></div></article>
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#dc2626,#f59e0b)"><span style="font-size:2.6rem">☕</span></div><div class="card__body"><h3 class="card__title">Java Full Stack</h3><div class="card__meta">⏱ 6 Months · 💼 Placement Support</div><p class="card__text">Spring Boot, Microservices &amp; React.</p><div class="card__footer"><span class="course-card__price">₹60,000</span><a class="btn btn--secondary btn--sm" href="course-java-full-stack.html">View Course</a></div></div></article>
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#0891b2,#16a34a)"><span style="font-size:2.6rem">⚛️</span></div><div class="card__body"><h3 class="card__title">MERN Stack Development</h3><div class="card__meta">⏱ 5 Months · 💼 Placement Support</div><p class="card__text">MongoDB, Express, React &amp; Node.js.</p><div class="card__footer"><span class="course-card__price">₹55,000</span><a class="btn btn--secondary btn--sm" href="courses.html">View Course</a></div></div></article>
+          </div>
+        </div>
+
+        <!-- CLOUD -->
+        <div class="tabs__panel" data-tab-panel="cat" data-key="cloud">
+          <div class="grid grid--3">
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#7c3aed,#2456d6)"><span style="font-size:2.6rem">☁️</span></div><div class="card__body"><h3 class="card__title">AWS Cloud Architect</h3><div class="card__meta">⏱ 5 Months · 📜 Certification</div><p class="card__text">EC2, S3, VPC, Docker &amp; Terraform.</p><div class="card__footer"><span class="course-card__price">₹55,000</span><a class="btn btn--secondary btn--sm" href="course-aws-cloud.html">View Course</a></div></div></article>
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#2456d6,#0ea5e9)"><span style="font-size:2.6rem">🔷</span></div><div class="card__body"><h3 class="card__title">Microsoft Azure</h3><div class="card__meta">⏱ 4 Months · 📜 Certification</div><p class="card__text">Azure services, DevOps &amp; deployment.</p><div class="card__footer"><span class="course-card__price">₹52,000</span><a class="btn btn--secondary btn--sm" href="courses.html">View Course</a></div></div></article>
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#0f766e,#16a34a)"><span style="font-size:2.6rem">🐳</span></div><div class="card__body"><h3 class="card__title">DevOps Engineering</h3><div class="card__meta">⏱ 5 Months · 💼 Placement Support</div><p class="card__text">CI/CD, Docker, Kubernetes &amp; Jenkins.</p><div class="card__footer"><span class="course-card__price">₹58,000</span><a class="btn btn--secondary btn--sm" href="courses.html">View Course</a></div></div></article>
+          </div>
+        </div>
+
+        <!-- QA -->
+        <div class="tabs__panel" data-tab-panel="cat" data-key="qa">
+          <div class="grid grid--3">
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#16a34a,#0ea5e9)"><span style="font-size:2.6rem">🧪</span></div><div class="card__body"><h3 class="card__title">Software Testing</h3><div class="card__meta">⏱ 3 Months · 💼 Placement Support</div><p class="card__text">Manual + Automation with Selenium.</p><div class="card__footer"><span class="course-card__price">₹35,000</span><a class="btn btn--secondary btn--sm" href="course-software-testing.html">View Course</a></div></div></article>
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#9333ea,#2456d6)"><span style="font-size:2.6rem">🤖</span></div><div class="card__body"><h3 class="card__title">Automation Testing with AI</h3><div class="card__meta">⏱ 4 Months · 💼 Placement Support</div><p class="card__text">Selenium, Playwright, API &amp; CI/CD.</p><div class="card__footer"><span class="course-card__price">₹42,000</span><a class="btn btn--secondary btn--sm" href="courses.html">View Course</a></div></div></article>
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#0ea5e9,#16a34a)"><span style="font-size:2.6rem">🔎</span></div><div class="card__body"><h3 class="card__title">Selenium Automation</h3><div class="card__meta">⏱ 2 Months · 📜 Certification</div><p class="card__text">Web automation frameworks with Java.</p><div class="card__footer"><span class="course-card__price">₹28,000</span><a class="btn btn--secondary btn--sm" href="courses.html">View Course</a></div></div></article>
+          </div>
+        </div>
+
+        <!-- DESIGN -->
+        <div class="tabs__panel" data-tab-panel="cat" data-key="design">
+          <div class="grid grid--3">
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#ec4899,#f59e0b)"><span style="font-size:2.6rem">🎨</span></div><div class="card__body"><h3 class="card__title">UI/UX Design Master</h3><div class="card__meta">⏱ 4 Months · 💼 Placement Support</div><p class="card__text">Figma, design systems &amp; prototyping.</p><div class="card__footer"><span class="course-card__price">₹45,000</span><a class="btn btn--secondary btn--sm" href="courses.html">View Course</a></div></div></article>
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#8b5cf6,#ec4899)"><span style="font-size:2.6rem">🖌️</span></div><div class="card__body"><h3 class="card__title">Graphic Design</h3><div class="card__meta">⏱ 3 Months · 📜 Certification</div><p class="card__text">Photoshop, Illustrator &amp; branding.</p><div class="card__footer"><span class="course-card__price">₹32,000</span><a class="btn btn--secondary btn--sm" href="courses.html">View Course</a></div></div></article>
+            <article class="card course-card"><div class="card__media" style="background:linear-gradient(135deg,#f59e0b,#ec4899)"><span style="font-size:2.6rem">🌐</span></div><div class="card__body"><h3 class="card__title">Web Design</h3><div class="card__meta">⏱ 3 Months · 📜 Certification</div><p class="card__text">HTML, CSS, responsive &amp; modern UI.</p><div class="card__footer"><span class="course-card__price">₹30,000</span><a class="btn btn--secondary btn--sm" href="courses.html">View Course</a></div></div></article>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4"><a class="btn btn--primary btn--lg" href="courses.html">View All Courses →</a></div>
+    </div>
+  </section>
+
+  <!-- ===================== VALUE PROPS ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Why 4Achievers</span>
+        <h2>Training That's Built Around Getting You Hired</h2>
+      </div>
+      <div class="grid grid--4">
+        <div class="feature" data-reveal>
+          <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <h3 class="feature__title">Hands-On Learning</h3>
+          <p class="feature__text">Learn by building real projects, not just watching lectures. Every concept is applied.</p>
+        </div>
+        <div class="feature" data-reveal>
+          <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3 class="feature__title">Expert Mentors</h3>
+          <p class="feature__text">Trainers with 10+ years of real industry experience, mentoring you one-on-one.</p>
+        </div>
+        <div class="feature" data-reveal>
+          <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-7m0 0V0m0 7L4 16"/><rect x="2" y="14" width="8" height="8" rx="1"/></svg></div>
+          <h3 class="feature__title">Placement Assistance</h3>
+          <p class="feature__text">Resume building, mock interviews &amp; referrals through 500+ hiring partners.</p>
+        </div>
+        <div class="feature" data-reveal>
+          <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg></div>
+          <h3 class="feature__title">100% Job-Oriented</h3>
+          <p class="feature__text">Curriculum designed with employers to match exactly what jobs demand today.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROGRAM SPOTLIGHT ===================== -->
+  <section class="section">
+    <div class="container grid grid--2" style="align-items:center;gap:48px">
+      <div class="hero__card" data-reveal style="aspect-ratio:4/3">
+        <div class="media-ph" style="background:linear-gradient(135deg,#12357f,#1b4dc1)">
+          <div style="text-align:center;padding:24px">
+            <div style="font-size:3rem">🧠</div>
+            <div style="font-family:var(--head);font-weight:700;font-size:1.25rem;margin-top:8px">Data Science &amp; AI</div>
+            <div style="opacity:.85;margin-top:6px">6-Month Master Program</div>
+          </div>
+        </div>
+      </div>
+      <div data-reveal>
+        <span class="eyebrow">Program Spotlight</span>
+        <h2>Become a Job-Ready Data Scientist in 6 Months</h2>
+        <p class="lead">Go from fundamentals to advanced machine learning and GenAI, building a portfolio that proves your skills to recruiters.</p>
+        <div class="grid grid--2 mt-2" style="gap:14px">
+          <div class="chip" style="padding:12px 16px">📁 Live Projects &amp; Case Studies</div>
+          <div class="chip" style="padding:12px 16px">👨‍🏫 Expert Mentors</div>
+          <div class="chip" style="padding:12px 16px">📜 Industry Certification</div>
+          <div class="chip" style="padding:12px 16px">💼 Placement Support</div>
+        </div>
+        <div class="flex items-center gap-2 wrap mt-3">
+          <span class="badge badge--demand">🔥 Only 25 Seats Left</span>
+          <span style="color:var(--body)">Next batch starts soon</span>
+        </div>
+        <div class="hero__actions mt-2">
+          <a class="btn btn--primary" href="course-data-science.html">Explore Program</a>
+          <a class="btn btn--secondary" href="contact.html">Talk to an Advisor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REAL-WORLD PROJECTS ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Real-World Projects</span>
+        <h2>Learn by Building What the Industry Actually Ships</h2>
+        <p>Graduate with a portfolio of production-style projects, not just certificates.</p>
+      </div>
+      <div class="grid grid--4">
+        <article class="card" data-reveal><div class="card__media" style="background:linear-gradient(135deg,#1b4dc1,#0ea5e9)"><span style="font-size:2.2rem">🏥</span></div><div class="card__body"><h3 class="card__title">Healthcare Analytics Dashboard</h3><p class="card__text">Interactive insights from patient data for faster decisions.</p><div class="chips"><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">Power BI</span></div></div></article>
+        <article class="card" data-reveal><div class="card__media" style="background:linear-gradient(135deg,#f59e0b,#dc2626)"><span style="font-size:2.2rem">🛒</span></div><div class="card__body"><h3 class="card__title">E-Commerce Web Application</h3><p class="card__text">Scalable storefront with cart, payments &amp; messaging.</p><div class="chips"><span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">Kafka</span></div></div></article>
+        <article class="card" data-reveal><div class="card__media" style="background:linear-gradient(135deg,#16a34a,#0891b2)"><span style="font-size:2.2rem">⚙️</span></div><div class="card__body"><h3 class="card__title">Automation Testing Framework</h3><p class="card__text">End-to-end test suite wired into a CI/CD pipeline.</p><div class="chips"><span class="chip">Playwright</span><span class="chip">Selenium</span><span class="chip">CI/CD</span></div></div></article>
+        <article class="card" data-reveal><div class="card__media" style="background:linear-gradient(135deg,#7c3aed,#2456d6)"><span style="font-size:2.2rem">🌩️</span></div><div class="card__body"><h3 class="card__title">Multi-Cloud Infrastructure</h3><p class="card__text">Scalable, automated infra across cloud providers.</p><div class="chips"><span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">Terraform</span></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAPSTONE PORTFOLIO + FORM ===================== -->
+  <section class="section">
+    <div class="container grid grid--2" style="align-items:center;gap:48px">
+      <div data-reveal>
+        <span class="eyebrow">Capstone Portfolio</span>
+        <h2>Get Complete Access to 50+ Real-World Project Architectures</h2>
+        <p class="lead">Request our curated project codebases and a free demo class — see exactly how enterprise systems are designed and built.</p>
+        <ul class="list-check mt-2">
+          <li>50+ enterprise project repositories</li>
+          <li>1-on-1 senior architect mentorship</li>
+          <li>Instant WhatsApp delivery</li>
+        </ul>
+        <div class="stats mt-3" style="grid-template-columns:repeat(3,1fr)">
+          <div class="stat"><div class="stat__num" data-count="100" data-suffix="%">0</div><div class="stat__label">Live Code Access</div></div>
+          <div class="stat"><div class="stat__num" data-count="500" data-suffix="+">0</div><div class="stat__label">Hiring Partners</div></div>
+          <div class="stat"><div class="stat__num" data-count="8.4" data-prefix="₹" data-suffix=" LPA">0</div><div class="stat__label">Avg. Starting Package</div></div>
+        </div>
+      </div>
+      <div class="form-card" data-reveal>
+        <h3 style="margin-bottom:16px">Request Project Codebases &amp; Free Demo</h3>
+        <form onsubmit="return window.FA.fakeSubmit(event,'Done! We\'ll send the codebases on WhatsApp shortly.')">
+          <div class="form__group"><label class="form__label">Full Name</label><input class="form__control" type="text" placeholder="Your name" required></div>
+          <div class="form__group"><label class="form__label">WhatsApp Number</label><input class="form__control" type="tel" placeholder="WhatsApp number" required></div>
+          <div class="form__row">
+            <div class="form__group"><label class="form__label">Tech Track</label>
+              <select class="form__control" required><option value="">Select</option><option>Data Science</option><option>Full Stack</option><option>Cloud &amp; DevOps</option><option>Testing &amp; QA</option></select>
+            </div>
+            <div class="form__group"><label class="form__label">Campus</label>
+              <select class="form__control" required><option value="">Select</option><option>Noida</option><option>Mumbai</option><option>Online</option><option>Other</option></select>
+            </div>
+          </div>
+          <button class="btn btn--accent btn--block btn--lg" type="submit">Request Codebases &amp; Free Demo</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAREER SUPPORT PROCESS ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Career Support</span>
+        <h2>A Structured Path From Learning to Landing the Job</h2>
+      </div>
+      <div class="steps">
+        <div class="step" data-reveal><div class="step__num"></div><h3 class="step__title">Resume &amp; ATS Review</h3><p class="step__text">One-to-one resume review, ATS-friendly formatting, project highlighting &amp; LinkedIn optimisation.</p></div>
+        <div class="step" data-reveal><div class="step__num"></div><h3 class="step__title">1-on-1 Mock Interviews</h3><p class="step__text">Technical + HR mock interviews with detailed, personalised feedback to improve fast.</p></div>
+        <div class="step" data-reveal><div class="step__num"></div><h3 class="step__title">Interview Prep &amp; Coding Drills</h3><p class="step__text">Live sessions, role-specific prep and aptitude training to crack real rounds.</p></div>
+        <div class="step" data-reveal><div class="step__num"></div><h3 class="step__title">Job Referrals</h3><p class="step__text">Referrals through 500+ hiring partners, interview support &amp; onboarding assistance.</p></div>
+      </div>
+      <div class="logos mt-4" style="gap:24px;color:var(--body)">
+        <strong>500+ Hiring Partners</strong> · <strong>Dedicated Career Team</strong> · <strong>Ongoing Guidance</strong> · <strong>Support Till Onboarding</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Success Stories</span>
+        <h2>Our Learners Are Working at Companies They Love</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="testimonial" data-reveal>
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__quote">"I switched from a non-tech role to Data Analytics. The mentors and mock interviews made all the difference — I joined within two months of finishing."</p>
+          <div class="testimonial__person"><div class="avatar">AS</div><div><div class="testimonial__name">Akash Sharma</div><div class="testimonial__role">Data Analyst · Accenture, Noida · 2025</div></div></div>
+        </div>
+        <div class="testimonial" data-reveal>
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__quote">"The Software Testing program was fully hands-on. I built real automation frameworks and that's exactly what got me hired as a QA Engineer."</p>
+          <div class="testimonial__person"><div class="avatar" style="background:linear-gradient(135deg,#ec4899,#f59e0b)">PD</div><div><div class="testimonial__name">Pooja Deshmukh</div><div class="testimonial__role">QA Engineer · TCS, Mumbai · 2025</div></div></div>
+        </div>
+        <div class="testimonial" data-reveal>
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__quote">"Full Stack here means actually shipping projects. My portfolio did the talking in interviews and I landed a developer role quickly."</p>
+          <div class="testimonial__person"><div class="avatar" style="background:linear-gradient(135deg,#16a34a,#0891b2)">RV</div><div><div class="testimonial__name">Rahul Verma</div><div class="testimonial__role">Software Developer · Infosys, Thane · 2024</div></div></div>
+        </div>
+      </div>
+      <div class="stats mt-4" style="grid-template-columns:repeat(5,1fr)">
+        <div class="stat"><div class="stat__num" data-count="15000" data-suffix="+">0</div><div class="stat__label">Learners Trained</div></div>
+        <div class="stat"><div class="stat__num" data-count="5000" data-suffix="+">0</div><div class="stat__label">Placed Learners</div></div>
+        <div class="stat"><div class="stat__num" data-count="350" data-suffix="+">0</div><div class="stat__label">Hiring Companies</div></div>
+        <div class="stat"><div class="stat__num" data-count="4.9" data-suffix="/5">0</div><div class="stat__label">Student Rating</div></div>
+        <div class="stat"><div class="stat__num" data-count="10" data-suffix="+">0</div><div class="stat__label">Years Experience</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRAINING CENTERS ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Training Centers</span>
+        <h2>Our Training Centers Across India</h2>
+        <p>Modern classrooms &amp; labs, industry-experienced trainers, easy connectivity, and weekend + weekday batches.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="campus-card" data-reveal>
+          <div class="campus-card__media" style="background:linear-gradient(135deg,#1b4dc1,#2456d6)"><span style="font-size:2.4rem">🏢</span><span class="badge badge--dark campus-card__badge">HQ</span></div>
+          <div class="campus-card__body"><h3 class="card__title">Noida (NCR Head Office)</h3><p class="campus-card__addr">A-27D, Sector 16 Metro, Noida, Uttar Pradesh</p><div class="card__meta">🕘 9:30 AM – 7 PM · 📞 +91-93117-65521</div><div class="campus-card__row"><a class="btn btn--secondary btn--sm" href="campuses.html">View Campus</a><a class="btn btn--ghost btn--sm" href="#">Directions</a></div></div>
+        </article>
+        <article class="campus-card" data-reveal>
+          <div class="campus-card__media" style="background:linear-gradient(135deg,#0ea5e9,#16a34a)"><span style="font-size:2.4rem">🏢</span></div>
+          <div class="campus-card__body"><h3 class="card__title">Mumbai (Thane West)</h3><p class="campus-card__addr">Wagle Estate, Thane West, Maharashtra</p><div class="card__meta">🕘 9:30 AM – 7 PM · 📞 +91-80108-05667</div><div class="campus-card__row"><a class="btn btn--secondary btn--sm" href="campuses.html">View Campus</a><a class="btn btn--ghost btn--sm" href="#">Directions</a></div></div>
+        </article>
+        <article class="campus-card" data-reveal>
+          <div class="campus-card__media" style="background:linear-gradient(135deg,#7c3aed,#2456d6)"><span style="font-size:2.4rem">🏢</span></div>
+          <div class="campus-card__body"><h3 class="card__title">Delhi (Saket &amp; Laxmi Nagar)</h3><p class="campus-card__addr">Near Metro, Saket &amp; Laxmi Nagar, New Delhi</p><div class="card__meta">🕘 9:30 AM – 7 PM · 📞 +91-93117-65521</div><div class="campus-card__row"><a class="btn btn--secondary btn--sm" href="campuses.html">View Campus</a><a class="btn btn--ghost btn--sm" href="#">Directions</a></div></div>
+        </article>
+      </div>
+      <div class="text-center mt-4"><a class="btn btn--primary" href="campuses.html">View All 15 Campuses →</a></div>
+    </div>
+  </section>
+
+  <!-- ===================== JOURNAL ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Engineering Journal</span>
+        <h2>Latest Technical Guides &amp; Career Insights</h2>
+      </div>
+      <div class="grid grid--3">
+        <article class="card" data-reveal><div class="card__media" style="background:linear-gradient(135deg,#1b4dc1,#0ea5e9)"><span style="font-size:2rem">📊</span></div><div class="card__body"><div class="post-meta"><span>Data</span><span class="dot"></span><span>8 min read</span></div><h3 class="card__title">Data Analyst Roadmap 2026: Skills, Salary &amp; Portfolio Projects</h3><a href="journal.html">Read Guide →</a></div></article>
+        <article class="card" data-reveal><div class="card__media" style="background:linear-gradient(135deg,#16a34a,#0891b2)"><span style="font-size:2rem">🧪</span></div><div class="card__body"><div class="post-meta"><span>Testing</span><span class="dot"></span><span>6 min read</span></div><h3 class="card__title">Manual vs Automation Testing in 2026: Which Path Pays More?</h3><a href="journal.html">Read Guide →</a></div></article>
+        <article class="card" data-reveal><div class="card__media" style="background:linear-gradient(135deg,#f59e0b,#dc2626)"><span style="font-size:2rem">💻</span></div><div class="card__body"><div class="post-meta"><span>Development</span><span class="dot"></span><span>9 min read</span></div><h3 class="card__title">Python vs Java Full Stack in 2026: Demand, Salary &amp; Roadmap</h3><a href="journal.html">Read Guide →</a></div></article>
+      </div>
+      <div class="text-center mt-4"><a class="btn btn--secondary" href="journal.html">Read More Articles →</a></div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Common Questions &amp; Direct Answers</h2>
+      </div>
+      <div class="accordion" data-single>
+        <div class="accordion__item is-open"><button class="accordion__btn">How is this different from recorded tutorials?<span class="ico">+</span></button><div class="accordion__panel" style="max-height:200px"><p>Our programs are live and mentor-led. You get real-time doubt solving, 1-on-1 mentorship, graded projects and dedicated placement support — none of which recorded tutorials offer.</p></div></div>
+        <div class="accordion__item"><button class="accordion__btn">What certifications will I receive?<span class="ico">+</span></button><div class="accordion__panel"><p>You receive a 4Achievers course completion certificate, and our curriculum is aligned to industry certifications like AWS, Azure, and more so you can certify alongside your training.</p></div></div>
+        <div class="accordion__item"><button class="accordion__btn">Can I join from a non-IT background?<span class="ico">+</span></button><div class="accordion__panel"><p>Absolutely. Many of our top-placed learners come from non-IT backgrounds. Programs start from fundamentals and our mentors support you at every step.</p></div></div>
+        <div class="accordion__item"><button class="accordion__btn">How does the placement process work?<span class="ico">+</span></button><div class="accordion__panel"><p>After the core curriculum, our career team runs resume reviews, mock interviews and coding drills, then refers you to relevant openings across 500+ hiring partners.</p></div></div>
+        <div class="accordion__item"><button class="accordion__btn">Where are your labs located?<span class="ico">+</span></button><div class="accordion__panel"><p>We have 15+ campuses across India including Noida, Mumbai, Delhi, Bangalore, Gurugram, Pune and Hyderabad, plus a fully supported online mode.</p></div></div>
+        <div class="accordion__item"><button class="accordion__btn">What batch timings are available?<span class="ico">+</span></button><div class="accordion__panel"><p>We offer flexible weekday and weekend batches, plus fast-track and regular options, so you can learn alongside work or studies.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band" data-reveal>
+        <h2>Start Your Tech Career Transition</h2>
+        <p>Book your free 1-on-1 career counselling. Get direct advisor access, a personalised roadmap and free resources to kickstart your journey.</p>
+        <div class="cta-actions">
+          <a class="btn btn--light btn--lg" href="contact.html">Book Free Counselling</a>
+          <a class="btn btn--accent btn--lg" href="https://wa.me/919311765521" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESOURCE LINKS ===================== -->
+  <section class="section section--alt section--tight">
+    <div class="container">
+      <div class="section__head section__head--left" style="max-width:none">
+        <h3>Popular Roadmaps &amp; Free Guides (2026)</h3>
+      </div>
+      <div class="link-cloud">
+        <a href="journal.html">AI Engineer Roadmap</a><a href="journal.html">Data Analyst Roadmap</a><a href="journal.html">Data Scientist Roadmap</a>
+        <a href="journal.html">AWS Roadmap</a><a href="journal.html">Azure Roadmap</a><a href="journal.html">DevOps Roadmap</a>
+        <a href="journal.html">Full Stack Roadmap</a><a href="journal.html">Python Roadmap</a><a href="journal.html">Java Roadmap</a>
+        <a href="journal.html">GenAI Roadmap</a><a href="journal.html">Cyber Security Roadmap</a><a href="journal.html">Selenium Guide</a>
+        <a href="journal.html">Power BI Guide</a><a href="journal.html">SQL Interview Questions</a><a href="journal.html">UI/UX Roadmap</a>
+        <a href="journal.html">AutoCAD Roadmap</a><a href="journal.html">BIM Revit Roadmap</a><a href="journal.html">React Interview Questions</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
